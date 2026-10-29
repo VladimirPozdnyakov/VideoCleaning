@@ -1,0 +1,7 @@
+[package]
+name = "vc-detect"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+vc-core = { path = "../vc-core" }

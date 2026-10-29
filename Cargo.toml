@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/vc-core",
+    "crates/vc-codec",
+    "crates/vc-inpaint",
+    "crates/vc-detect",
+    "crates/vc-gui",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[profile.release]
+lto = "thin"

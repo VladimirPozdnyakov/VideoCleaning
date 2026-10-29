@@ -1,0 +1,13 @@
+[package]
+name = "vc-inpaint"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+vc-core = { path = "../vc-core" }
+vc-detect = { path = "../vc-detect" }
+rayon = "1"
+burn = { version = "0.22.1", default-features = false, features = ["std", "optim", "flex", "rayon"] }
+# LaMa-инференс: ONNX Runtime (динамическая библиотека, отдаётся вместе с
+# приложением в lib/; путь настраивается env ORT_DYLIB_PATH).
+ort = { version = "2.0.0-rc.15", default-features = false, features = ["load-dynamic", "cuda"] }

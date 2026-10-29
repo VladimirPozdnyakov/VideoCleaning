@@ -1,0 +1,22 @@
+# Rust
+/target
+
+# Python-окружение и сторонний код ProPainter
+/tools/venv
+/tools/propainter-repo
+__pycache__/
+
+# Тяжёлые устанавливаемые ресурсы (инструкции — в README)
+/models
+/weights
+/lib
+
+# Артефакты экспорта и рабочие каталоги
+*.export.log
+*.vcvideo.log
+*.vcvideo.mp4
+.vc_ai_work/
+*.tmp
+
+# Проекты пользователя (могут содержать личные пути)
+*.vcproj

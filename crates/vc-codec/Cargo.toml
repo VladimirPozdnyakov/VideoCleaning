@@ -1,0 +1,11 @@
+[package]
+name = "vc-codec"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+vc-core = { path = "../vc-core" }
+vc-inpaint = { path = "../vc-inpaint" }
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
